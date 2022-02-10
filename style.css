@@ -463,6 +463,10 @@ header .header-cases {
 }
 /* CASE1 */
 
+.case-vid {
+  overflow: hidden;
+}
+
 .case-vid h2 {
   font-family: "Lato", sans-serif;
   font-size: 24px;
@@ -471,10 +475,11 @@ header .header-cases {
   text-align: center;
   text-transform: uppercase;
 }
+
 .case-vid video {
   display: block;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .case-vid article h3 {
@@ -482,6 +487,7 @@ header .header-cases {
   font-size: 24px;
   font-weight: 700;
   color: #111;
+  text-align: center;
   text-transform: uppercase;
   padding-bottom: 20px;
 }
@@ -491,8 +497,21 @@ header .header-cases {
   font-size: 16px;
   line-height: 24px;
   color: #111;
-  column-count: 3;
-  column-gap: 30px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .case-vid video {
+    padding: 30px 0;
+  }
+
+  .case-vid article h3 {
+    text-align: left;
+  }
+
+  .case-vid article p {
+    column-count: 3;
+    column-gap: 30px;
+  }
 }
 
 /* FOOTER */
